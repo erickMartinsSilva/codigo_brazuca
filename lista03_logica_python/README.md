@@ -1,1 +1,1 @@
-Resolução da terceira lista de exercícios de Python
+Resolução da terceira lista de lógica de programação com Python
