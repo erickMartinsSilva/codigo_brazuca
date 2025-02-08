@@ -1,23 +1,23 @@
-var contador = 0;
+var contador = 0; // conta quantas transações foram simuladas na sessão atual
 
-function adicionarAoHistorico(resultado) {
+function adicionarAoHistorico(resultado) { // adiciona uma transação ao histórico quando for simulada
     let historico = document.getElementById('historico');
     let historicoh2 = document.getElementById('historico-h2');
-    let entrada = document.createElement('div');
+    let entrada = document.createElement('div'); // cria uma nova entrada no histórico
 
     historico.classList.remove('oculto');
     historicoh2.classList.remove('oculto');
     
-    entrada.innerHTML = resultado.innerHTML;
+    entrada.innerHTML = resultado.innerHTML; // define o html da nova entrada
 
-    historico.appendChild(entrada);
+    historico.appendChild(entrada); // adiciona a nova entrada ao histórico
 };
 
-function limparHistorico() {
+function limparHistorico() { 
     let historico = document.getElementById('historico');
     let historicoh2 = document.getElementById('historico-h2');
 
-    while(historico.firstChild) {
+    while(historico.firstChild) { // remove o primeiro nó filho enquanto houver nós filhos
         historico.removeChild(historico.firstChild);
     }
 
@@ -25,7 +25,7 @@ function limparHistorico() {
     historicoh2.classList.add('oculto');
 }
 
-function temporizador() {
+function temporizador() { // temporizador que exclui o histórico de transações a cada 1 minuto
     let intervalo = null;
     let segundos = 0;
 
