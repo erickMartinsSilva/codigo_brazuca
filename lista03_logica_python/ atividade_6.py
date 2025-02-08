@@ -2,6 +2,6 @@ frase = input("Insira uma frase: ")
 contador = 0
 
 for char in frase:
-  if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
+  if char.lower() == 'a' or char.lower() == 'e' or char.lower() == 'i' or char.lower() == 'o' or char.lower() == 'u':
     contador = contador + 1
 print("Vogais:", contador)

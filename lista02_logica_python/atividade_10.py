@@ -8,6 +8,9 @@ def primo(num):
 
 n1 = int(input("Insira o primeiro numero do intervalo: "))
 n2 = int(input("Insira o segundo numero do intervalo (deve ser maior que o primeiro): "))
-for j in range(n1,n2):
+
+print("Numeros primos: ")
+
+for j in range(n1,n2+1):
   if (primo(j)):
     print(j)

@@ -1,10 +1,11 @@
 def par(num):
   if num % 2 != 0:
     return False
-  return True
+  else: return True
 
 num = int(input("Insira um numero: "))
+
 if par(num):
-  print("Par")
+  print("O numero é par")
 else:
-  print("Impar")
+  print("O numero é ímpar")

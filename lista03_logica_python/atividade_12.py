@@ -1,13 +1,14 @@
 import random
 
 numero = random.randint(1, 100)
-print("Estou pensando em um numero entre 1 e 100. Voce consegue adivinha-lo?")
-while(1):
+print("Estou pensando em um número entre 1 e 100. Você consegue adivinhá-lo?")
+
+tentativa = None
+while(tentativa != numero):
   tentativa = int(input())
   if (tentativa > numero):
-    print("O numero que eu estou pensando e menor, tente novamente")
+    print("O numero que eu estou pensando é menor, tente novamente: ")
   elif (tentativa < numero):
-    print("O numero que eu estou pensando e maior, tente novamente")
-  else:
-    break
-print("Parabens! Voce adivinhou o numero!")
+    print("O numero que eu estou pensando é maior, tente novamente: ")
+
+print("Parabéns! Você adivinhou o número!")
