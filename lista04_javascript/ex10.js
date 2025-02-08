@@ -1,8 +1,9 @@
+// função que retorna a quantidade de vogias de uma palavra
 function qtdVogais(str) {
     let contador = 0;
     str.split('');
     for(let i = 0; i < str.length; i++) {
-        if(str[i] == 'A' || str[i] == 'a' || str[i] == 'E' || str[i] == 'e' || str[i] == 'I' || str[i] == 'i' || str[i] == 'O' || str[i] == 'o' || str[i] == 'U' || str[i] == 'u') {
+        if(str[i].toLowerCase() == 'a' || str[i].toLowerCase() == 'e' || str[i].toLowerCase() == 'i' || str[i].toLowerCase() == 'o' || str[i].toLowerCase() == 'u') {
             contador++;
         }
     }
@@ -10,4 +11,4 @@ function qtdVogais(str) {
 }
 
 let str = "Ola!";
-console.log(qtdVogais(str));
+console.log(qtdVogais(str)); // resultado esperado: 2

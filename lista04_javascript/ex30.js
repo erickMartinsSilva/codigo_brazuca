@@ -1,3 +1,4 @@
+// função que retorna a quantidade de números ímpares numa lista
 function qtdNumerosImpares(lista) {
     let contador = 0;
     for(let i = 0; i < lista.length; i++) {
@@ -9,4 +10,4 @@ function qtdNumerosImpares(lista) {
 }
 
 let lista = [1,2,3,4,5];
-console.log(qtdNumerosImpares(lista));
+console.log(qtdNumerosImpares(lista)); // resultado esperado: 3

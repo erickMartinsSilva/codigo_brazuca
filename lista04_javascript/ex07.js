@@ -1,3 +1,4 @@
+// função que retorna true se um número é primo e false se não for
 function primo(a) {
     if(a <= 1) {
         return false;
@@ -11,4 +12,4 @@ function primo(a) {
 }
 
 let a = 2;
-console.log(primo(a));
+console.log(primo(a)); // resultado esperado: true

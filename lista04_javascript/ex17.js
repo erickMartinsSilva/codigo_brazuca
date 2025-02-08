@@ -1,3 +1,4 @@
+// função que organiza uma lista de números em ordem crescente utilizando o algoritmo de bubble sort
 function ordenaLista(lista) {
     let aux;
     for(let i = 0; i < lista.length; i++) {
@@ -12,5 +13,6 @@ function ordenaLista(lista) {
 }
 
 let lista = [3, 2, 1];
+
 ordenaLista(lista);
 console.log(lista);

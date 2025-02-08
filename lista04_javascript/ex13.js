@@ -1,3 +1,4 @@
+// função que retorna os a primeiros termos da sequência de Fibonacci
 function fibonacci(a) {
     let sequencia = [];
     sequencia[0] = 0;
@@ -11,4 +12,4 @@ function fibonacci(a) {
 }
 
 let a = 10;
-console.log(fibonacci(a));
+console.log(fibonacci(a)); // resultado esperado: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]

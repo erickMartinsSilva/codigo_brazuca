@@ -1,3 +1,4 @@
+// função que retorna quantas vezes um caractere aparece numa string
 function frequencia(char,str) {
     let contador = 0;
     str.split('');
@@ -11,4 +12,4 @@ function frequencia(char,str) {
 
 let str = "Banana";
 let char = 'a';
-console.log(frequencia(char,str));
+console.log(frequencia(char,str)); // resultado esperado: 3

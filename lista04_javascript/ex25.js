@@ -1,7 +1,8 @@
+// função que transforma as vogais numa string para asteriscos
 function vogaisToAsterisk(str) {
     stringSeparada = str.split('');
     for(let i = 0; i < str.length; i++) {
-        if(str[i] == 'A' || str[i] == 'a' || str[i] == 'E' || str[i] == 'e' || str[i] == 'I' || str[i] == 'i' || str[i] == 'O' || str[i] == 'o' || str[i] == 'U' || str[i] == 'u') {
+        if(str[i].toLowerCase() == 'a' || str[i].toLowerCase() == 'e' || str[i].toLowerCase() == 'i' || str[i].toLowerCase() == 'o' || str[i].toLowerCase() == 'u') {
             stringSeparada[i] = '*';
         }
     }
@@ -9,4 +10,4 @@ function vogaisToAsterisk(str) {
 }
 
 let str = "Ola mundo!";
-console.log(vogaisToAsterisk(str));
+console.log(vogaisToAsterisk(str)); // resultado esperado: "*l* m*nd*!"

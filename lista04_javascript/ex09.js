@@ -1,6 +1,7 @@
-function inverterString(str) {
-    return str.split('').reverse().join('');
+// função que inverte uma string
+function inverterString(string) {
+    return string.split('').reverse().join('');
 }
 
-let str = "CodigoBrazuka";
-console.log(inverterString(str));
+let string = "CodigoBrazuka";
+console.log(inverterString(string)); // resultado esperado: akuzarBogidoC
