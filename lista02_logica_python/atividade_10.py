@@ -1,3 +1,5 @@
+# imprime todos os números primos num dado intervalo
+
 def primo(num):
   if num <= 1:
     return False

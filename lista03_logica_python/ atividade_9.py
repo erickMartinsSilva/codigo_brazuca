@@ -1,15 +1,15 @@
-# organiza uma lista de três elementos informados pelo usuário em ordem crescente por meio do algoritmo de bubble sort
+# original: organiza uma lista de três elementos informados pelo usuário em ordem crescente por meio do algoritmo de bubble sort
+# modificado para permitir que o usuário crie uma lista com quantos elementos quiser
 
 lista = []
-i = 0
+num = None
 
-for i in range(3):
-  num = int(input("Insira um numero: "))
-  lista.append(num)
-  i += 1
+while(num != 0):
+  num = int(input("Insira um número para compor a lista (0 para encerrar): "))
+  if num != 0: lista.append(num)
 
-for j in range(3):
-  for k in range(3-1-j):
+for j in range(len(lista)):
+  for k in range(len(lista)-1-j):
     if lista[k] > lista[k+1]:
       aux = lista[k]
       lista[k] = lista[k+1]
@@ -17,4 +17,4 @@ for j in range(3):
       k += 1
   j += 1
 
-print(lista)
+if len(lista) != 0: print(lista)

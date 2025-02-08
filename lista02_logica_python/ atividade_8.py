@@ -1,3 +1,5 @@
+# verifica se um número é par ou ímpar
+
 def par(num):
   if num % 2 != 0:
     return False
