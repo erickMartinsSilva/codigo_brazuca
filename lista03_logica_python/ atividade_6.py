@@ -1,3 +1,5 @@
+# conta as vogais de uma string
+
 frase = input("Insira uma frase: ")
 contador = 0
 

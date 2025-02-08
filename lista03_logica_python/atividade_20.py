@@ -1,3 +1,5 @@
+# com base numa lista informada pelo usuário, exibe o maior número, menor número e a média
+
 lista = []
 soma = 0
 num = None

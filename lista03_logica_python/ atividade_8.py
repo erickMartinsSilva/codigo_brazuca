@@ -1,3 +1,5 @@
+# exibe a sequência de fibonacci até o n-ésimo termo
+
 def fibonacci(n):
   if n <= 0:
     return []

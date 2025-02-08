@@ -1,3 +1,5 @@
+# simples jogo de adivinhação onde o jogador precisa adivinhar que número entre 1 e 100 foi escolhido pela máquina
+
 import random
 
 numero = random.randint(1, 100)

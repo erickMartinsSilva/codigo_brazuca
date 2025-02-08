@@ -1,3 +1,5 @@
+# calcula o fatorial de um número
+
 num = int(input("Insira um numero inteiro: "))
 aux = num
 i = num - 1

@@ -1,3 +1,5 @@
+# conta quantas palavras há numa frase
+
 frase = input("Insira uma frase: ")
 contador = 1
 

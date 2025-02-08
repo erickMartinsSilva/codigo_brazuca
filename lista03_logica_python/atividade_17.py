@@ -1,3 +1,5 @@
+# verifica se um número é perfeito (soma de seus divisores exceto o número for igual ao número)
+
 num = int(input("Insira um numero: "))
 lista_divisores = []
 soma = 0

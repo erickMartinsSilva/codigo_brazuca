@@ -1,3 +1,5 @@
+# calcula a média de várias notas
+
 soma_nota = 0
 contador = 0
 nota = None
