@@ -1,11 +1,11 @@
 var contador = 0; // conta quantas transações foram simuladas na sessão atual
+const historico = document.getElementById('historico');
+const historicoh2 = document.getElementById('historico-h2');
 
 function adicionarAoHistorico(resultado) { // adiciona uma transação ao histórico quando for simulada
-    let historico = document.getElementById('historico');
-    let historicoh2 = document.getElementById('historico-h2');
     let entrada = document.createElement('div'); // cria uma nova entrada no histórico
 
-    historico.classList.remove('oculto');
+    historico.classList.remove('oculto'); // exibe as divs historico e historico-h2
     historicoh2.classList.remove('oculto');
     
     entrada.innerHTML = resultado.innerHTML; // define o html da nova entrada
@@ -14,29 +14,26 @@ function adicionarAoHistorico(resultado) { // adiciona uma transação ao histó
 };
 
 function limparHistorico() { 
-    let historico = document.getElementById('historico');
-    let historicoh2 = document.getElementById('historico-h2');
-
     while(historico.firstChild) { // remove o primeiro nó filho enquanto houver nós filhos
         historico.removeChild(historico.firstChild);
     }
 
-    historico.classList.add('oculto');
+    historico.classList.add('oculto'); // oculta as divs historico e historico-h2
     historicoh2.classList.add('oculto');
-}
+};
 
-function temporizador() { // temporizador que exclui o histórico de transações a cada 1 minuto
+function temporizador() { 
     let intervalo = null;
     let segundos = 0;
 
-    intervalo = setInterval(() => {
+    intervalo = setInterval(() => { // temporizador em segundos
         segundos++;
         console.log(segundos);
-        if(segundos % 60 == 0) {
+        if(segundos % 60 == 0) { // limpa o histórico a cada minuto
             limparHistorico();
         } 
     }, 1000)
-}
+};
 
 temporizador();
 
