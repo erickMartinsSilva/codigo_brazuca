@@ -1,0 +1,5 @@
+Resolução da lista de desafios de lógica de programação com Python.
+
+- Código secreto: O programa obtém um intervalo numérico definido pelo usuário. Para cada número do intervalo, se ele for divisível por 3, ele é somado a uma variável total. Se ele for divisível por 5, ele é subtraído do total. Se ele for divisível por 3 e 5 ao mesmo tempo, nada é feito. No fim, exiba o valor da variável total no console.
+- Número mágico: O programa obtém um intervalo numérico definido pelo usuário. O programa deve exibir a quantidade de números que são divisíveis por 4, primos e que a soma de seus dígitos seja par. Se não houver nenhum número no intervalo que cumpra esta condição, imprima uma mensagem informando isso ao usuário.
+- Bingo: O usuário recebe uma cartela contendo cinco números aleatórios de 1 a 75. A cada sorteio, o usuário tenta adivinhar o número que foi sorteado na cartela até acertar, assim removendo-o da cartela. O jogo termina quando o usuário acertar todos os números da sua cartela.

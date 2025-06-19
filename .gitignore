@@ -1,0 +1,8 @@
+# pdf files
+*.pdf
+
+# output files
+/out/
+
+# config files
+tsconfig.json
