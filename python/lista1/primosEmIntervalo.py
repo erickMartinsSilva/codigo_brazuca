@@ -13,6 +13,5 @@ n2 = int(input("Insira o segundo numero do intervalo (deve ser maior que o prime
 
 print("Numeros primos: ")
 
-for j in range(n1,n2+1):
-  if (primo(j)):
-    print(j)
+for i in range(n1,n2+1):
+  if primo(i): print(i)

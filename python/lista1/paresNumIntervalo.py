@@ -7,5 +7,4 @@ fim = int(input("Insira o número final: "))
 print("Números pares de", inicio, "até", fim, ":")
 
 for i in range(inicio, fim):
-  if i % 2 == 0:
-    print(i)
+  if i % 2 == 0: print(i)

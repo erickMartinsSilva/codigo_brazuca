@@ -1,13 +1,10 @@
 # verifica se um número é par ou ímpar
 
-def par(num):
+def paridade(num):
   if num % 2 != 0:
-    return False
-  else: return True
+    return "Ímpar"
+  else: return "Par"
 
 num = int(input("Insira um numero: "))
+print(paridade(num))
 
-if par(num):
-  print("O numero é par")
-else:
-  print("O numero é ímpar")
