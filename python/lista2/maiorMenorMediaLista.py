@@ -1,4 +1,4 @@
-# com base numa lista informada pelo usuário, exibe o maior número, menor número e a média
+# com base numa lista informada pelo usuário, exibe o maior número, menor número e a média dos valores da lisita
 
 lista = []
 soma = 0

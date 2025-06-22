@@ -1,4 +1,4 @@
-# calcula a área de um círculo com base no seu raio
+# calcula a área de um círculo com base num valor de raio inserido pelo usuário
 
 import math
 

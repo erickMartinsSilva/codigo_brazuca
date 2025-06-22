@@ -1,4 +1,4 @@
-# conta quantas palavras há numa frase
+# conta quantas palavras há numa string fornecida pelo usuário
 
 frase = input("Insira uma frase: ")
 

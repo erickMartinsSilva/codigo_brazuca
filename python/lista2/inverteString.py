@@ -1,8 +1,8 @@
-# inverte uma string
+# inverte uma string inserida pelo usuário
 
-str = input("Insira uma string: ")
+str = input("Insira uma frase: ")
 
 strDividida = list(str)
 strDividida.reverse()
 
-print(''.join(strDividida))
+print(f"Frase invertida: {''.join(strDividida)}")

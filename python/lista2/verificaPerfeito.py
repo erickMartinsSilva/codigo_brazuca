@@ -9,5 +9,5 @@ for i in range(2, num):
 
 for numero in lista_divisores: soma += numero
 
-if soma == num: print("O numero e perfeito")
-else: print("O numero nao e perfeito")
+if soma == num: print("O número é perfeito")
+else: print("O numero não é perfeito")
