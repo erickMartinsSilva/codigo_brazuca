@@ -1,8 +1,9 @@
 # verifica se uma palavra é um palíndromo (igual de trás pra frente)
 
 palavra = input("Insira uma palavra: ")
+palavraDividida = list(palavra)
 
-if palavra == palavra[::-1]:
-  print("E um palindromo")
-else:
-  print("Nao e um palindromo")
+palavraDividida.reverse()
+
+if(''.join(palavraDividida) == palavra): print("É um palíndromo")
+else: print("Não é um palíndromo")

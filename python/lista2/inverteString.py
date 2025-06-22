@@ -1,4 +1,8 @@
 # inverte uma string
 
 str = input("Insira uma string: ")
-print("String invertida: ",str[::-1])
+
+strDividida = list(str)
+strDividida.reverse()
+
+print(''.join(strDividida))

@@ -4,20 +4,22 @@ lista = []
 soma = 0
 num = None
 
+print(" --- Maior, Menor e Média de uma Lista --- ")
+
 while(num != -1):
   num = int(input("Insira numeros para compor uma lista (-1 para encerrar): "))
-  lista.append(num)
+  if num != -1: lista.append(num)
 
 maior = lista[0]
 menor = lista[0]
 
-for i in range(len(lista)):
-  if lista[i] > maior:
-    maior = lista[i]
-  elif lista[i] < menor:
-    menor = lista[i]
-  soma += lista[i]
+for i in lista:
+  if i > maior:
+    maior = i
+  elif i < menor:
+    menor = i
+  soma += i
 
-print("Maior numero da lista:", maior)
-print("Menor numero da lista:", menor)
-print("Media dos numeros da lista:", soma/len(lista))
+print("Maior número da lista:", maior)
+print("Menor número da lista:", menor)
+print("Média dos números da lista:", f"{soma/len(lista):.2f}")
