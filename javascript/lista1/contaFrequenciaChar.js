@@ -1,13 +1,9 @@
 // função que retorna quantas vezes um caractere aparece numa string
+
+// função que divide a string num array de chars, filtra o array para conter apenas as ocorrências da letra e então
+// retorna o tamanho do array filtrado
 function frequencia(char,str) {
-    let contador = 0;
-    str.split('');
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] == char) {
-            contador++;
-        }
-    }
-    return contador;
+    return str.split('').filter(item => item == char).length;
 }
 
 let str = "Banana";

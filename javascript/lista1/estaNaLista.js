@@ -1,11 +1,6 @@
 // função que verifica se um número está numa lista
 function estaNaLista(a, lista) {
-    for(let i = 0; i < lista.length; i++) {
-        if(a == lista[i]) {
-            return true;
-        }
-    }
-    return false;
+    return lista.includes(a);
 }
 
 let a = 2;

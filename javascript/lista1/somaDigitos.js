@@ -1,11 +1,8 @@
 // função que soma os dígitos de um número
 function somaDigitos(num) {
-    let soma = 0;
     let algarismos = num.toString().split('').map(Number);
-    for(let i = 0; i < algarismos.length; i++) {
-        soma += algarismos[i];
-    }
-    return soma;
+
+    return algarismos.reduce((acc, current) => acc + current, 0)
 }
 
 let num = 12345;

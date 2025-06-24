@@ -1,8 +1,6 @@
 // função que retorna se um número é par ou ímpar
 function parOuImpar(a) {
-    if(a % 2 == 0) {
-        return "Par";
-    } else return "Impar";
+    return a % 2 == 0 ? "Par" : "Ímpar";
 }
 
 let a = 3;

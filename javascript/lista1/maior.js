@@ -1,8 +1,6 @@
 // função que retorna o maior de dois números
 function maior(a,b) {
-    if(a>b) {
-        return a;
-    } else return b;
+    return a > b ? a : b;
 }
 
 let a = 15;

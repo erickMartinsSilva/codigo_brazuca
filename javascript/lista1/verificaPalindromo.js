@@ -1,9 +1,6 @@
 // função que verifica se uma string é um palíndromo
 function verificaPalindromo(str) {
-    let strInversa = str.split('').reverse().join('');
-    if(str == strInversa) {
-        return true;
-    } else return false;
+    return str == str.split('').reverse().join('') ? true : false;
 }
 
 let str = "arara";

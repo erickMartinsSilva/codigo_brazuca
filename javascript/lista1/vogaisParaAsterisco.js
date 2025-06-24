@@ -1,12 +1,14 @@
 // função que transforma as vogais numa string para asteriscos
 function vogaisToAsterisk(str) {
-    stringSeparada = str.split('');
-    for(let i = 0; i < str.length; i++) {
-        if(str[i].toLowerCase() == 'a' || str[i].toLowerCase() == 'e' || str[i].toLowerCase() == 'i' || str[i].toLowerCase() == 'o' || str[i].toLowerCase() == 'u') {
-            stringSeparada[i] = '*';
+    const vogais = ['a', 'e', 'i', 'o', 'u']
+    let splitStr = str.toLowerCase().split('')
+
+    for(let i = 0; i < splitStr.length; i++) {
+        if(vogais.includes(splitStr[i])) {
+            splitStr[i] = '*'
         }
     }
-    return stringSeparada.join('');
+    return splitStr.join('');
 }
 
 let str = "Ola mundo!";

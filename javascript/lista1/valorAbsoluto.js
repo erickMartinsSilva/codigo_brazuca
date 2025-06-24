@@ -1,8 +1,6 @@
 // função que retorna o valor absoluto (módulo) de um número
 function valorAbsoluto(a) {
-    if(a < 0) {
-        return (a*-1);
-    } else return a;
+    return a < 0 ? -a : a;
 }
 
 let a = -15;

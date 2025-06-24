@@ -1,7 +1,6 @@
 // função que remove espaços de uma string
 function removerEspacos(str) {
-    let strNova = str.split(' ').join('');
-    return strNova;
+    return str.split(' ').join('');
 }
 
 let str = "Hello world!";

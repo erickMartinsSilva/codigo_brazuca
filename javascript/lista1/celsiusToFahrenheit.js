@@ -1,6 +1,6 @@
 // função que converte uma dada temperatura de celsius para fahrenheit
-function celsiusToFahrenheit(a) {
-    return ((a*9/5) + 32);
+function celsiusToFahrenheit(celsius) {
+    return ((celsius * 9/5) + 32);
 }
 
 let a = 35.2;
